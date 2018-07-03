@@ -64,8 +64,11 @@ public class SentenciaSwitch{
 	}
 	
 	public static void sentenciaSwitchSinBreak(){
-	
-		int dia = 5;
+		//Si los casos se dejan sin break, entonces el flujo continuara hasta encontrar la sentencia break
+		//No hay un orden predefinido para ubiar los casos, a menos que deban seguir un flujo predeterminado
+		int dia = 5; 
+		// Si cambiamos el valor de la variable dia = 6 este se ira directamente al case 6 y terminara el flujo
+		// Si cambiamos el valor de la vairable dia = 0, este pasara por todos los casos.
 		switch(dia){
 			case 0:
 				System.out.println("Domingo");
@@ -77,5 +80,37 @@ public class SentenciaSwitch{
 				break; //Termina el bloque
 		}
 	}
+
+
+	//Siguiendo las reglas observemos el siguiente switch
+	/*
+	private static int getSortOrder(String firstName, final String lastName){
+		String middleName = "Patricia";
+		final String suffix = "JR";
+		int id = 0;
+		switch(firstName){
+			case "Test":
+				return 52;
+			case middleName:  //No compila porque middleName no es final
+				id = 5;
+				break;
+			case suffix:
+				id = 0;
+				break;
+			case lastName: //No compila porque aunque es final, esta no es una constante
+				id = 8;
+				break;
+			case 5: //No compila porque el tipo de dato debe ser un String y no un int
+				id = 7;
+				break;
+			case 'J': // No compila porque el tipo de dato debe ser un String y no un char
+				id = 10;
+				break;
+			case java.time.DayOfWeek.SUNDAY : //es un enum y no un String
+				id = 15;
+				break;	
+		}
+		return id;
+	}*/
 
 }
