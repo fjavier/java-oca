@@ -1,5 +1,4 @@
 # Paquetes
-
 Los paquetes son un conjunto de agrupaciones de Tipos(clases, interfaces, anotaciones y enums)
 
 Su función es organizar el código, de tal manera que todos puedan encontrar facilmente los tipos segun
@@ -70,10 +69,12 @@ import graphics.*;
 
 importara todos los miembros del paquete graphics, de esta manera podremos utilizar los tipos contenidos en este
 paquete.
-´´´java 
+```java 
+
 Circulo circulo = new Circulo();
 Rectangulo rectangulo = new Rectangulo();
-´´´
+
+```
 Ambiguedad en los Nombres:
 
 Puede darse el caso en el que el nombre de un tipo coincida con el nombre de otro tipo, y por casualidad necesitamos utilizar ambos,
