@@ -43,29 +43,39 @@ que esta dentro del mismo paquete.
 Sin embargo si se requiere utilizar un miembro desde otro paquete, este debera ser importado mediante su
 fqd por ejemplo:
 
+```
 graphics.Rectangulo
+```
 
 Se podria utilizar el fqd para crear una instancia.
 
+```
 graphics.Rectangulo rectangulo = new graphics.Rectangulo();
+```
 
 Importando un Paquete miembro:
 
 Para importar un paquete miembro, este debera utilizar la palabra import, justo despues de package y antes de la 
 definición del tipo, por ejemplo
 
+```
 import graphics.Rectangulo;
+```
 
 Ahora se puede utilizar el nombre del tipo y crear una instancia.
 
+```
 Rectangulo rectangulo = new Rectangulo();
+```
 
 Importando todos los miembros de un paquete:
 
 Si se requiere utilizar varios miembros de un paquete, entonces debemos agregar a nuestro paquete el wildcard *, justo
 despues del paquete. por ejemplo
 
+```
 import graphics.*;
+```
 
 importara todos los miembros del paquete graphics, de esta manera podremos utilizar los tipos contenidos en este
 paquete.
