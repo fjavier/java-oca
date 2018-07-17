@@ -70,10 +70,12 @@ import graphics.*;
 
 importara todos los miembros del paquete graphics, de esta manera podremos utilizar los tipos contenidos en este
 paquete.
-
+´´´java 
 Circulo circulo = new Circulo();
 Rectangulo rectangulo = new Rectangulo();
-
+´´´
 Ambiguedad en los Nombres:
 
+Puede darse el caso en el que el nombre de un tipo coincida con el nombre de otro tipo, y por casualidad necesitamos utilizar ambos,
+para estos casos debemos utilizar el fqd del tipo. 
 
