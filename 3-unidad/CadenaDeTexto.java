@@ -5,6 +5,7 @@ public class CadenaDeTexto{
 		cadenasInmutables();	
 		poolDeCadenas();
 		obtenerCaracter();
+		obtenerCaracteresDeCadena();	
 	}	
 
 	public static void cadenasInmutables(){
@@ -39,5 +40,13 @@ public class CadenaDeTexto{
 		//System.out.println(nombrePerro.charAt(10)); //Genera una Excepción ya que no existe ningun caracter
 		char letraEncontrada = nombrePerro.charAt(5);
 		System.out.println(letraEncontrada);
+		System.out.println(nombrePerro.length());
+	}
+
+	public static void obtenerCaracteresDeCadena(){
+		String cadena = "Cisco505";	
+		for(int i=0; i < cadena.length(); i++){
+			System.out.println(cadena.charAt(i));
+		}
 	}
 }
