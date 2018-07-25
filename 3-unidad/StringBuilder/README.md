@@ -51,4 +51,40 @@ mismaReferencia.
 
 Esto quiere decir que sb y mismaReferencia, son iguales.
 
+### Otro ejemplo:
 
+StringBuilder a = new StringBuilder("abc");
+StringBuilder b = a.append("de");
+b = b.append("f").append("g");
+System.out.println("a="+a);
+System.out.println("b="+b);
+
+Las variables a y b apuntan a la misma referencia, por lo tanto ambas son modificadas.
+a = "abcdefg"
+b = "abcdefg"
+
+## Creando un StringBuilder
+
+Firmas:
+StringBuilder sb1 = new StringBuilder(); //StringBuilder Vacio
+StringBuilder sb2 = new StringBuilder("animal"); //StringBuilder con valor animal
+StringBuilder sb3 = new StringBuilder(10); //StringBuilder con un valor de caracteres reservado
+
+Tamaño es el número de caracteres que estan actualmente en la secuencia, y Capacidad es el número
+que puede mantener. Ya que una cadena es inmutable, el tamaño y la capacidad son las mismas.
+
+Para el StringBuilder, Java sabe que el tamaño puede variar. Cuando el StringBuilder es construido, este
+puede iniciar con una capacidad establecida por defecto (16) o la que el usuario pueda darle.
+
+StringBuilder sb = new StringBuilder(5); //Capacidad = 5, tamaño = 0
+sb.append("anim"); //Capacidad = 5, tamaño = 4
+sb.append("als"); //Capacidad incrementa automaticamente al tamaño. tamaño = 7
+
+## Los metodos a tomar en cuenta en el examen son los siguientes:
+
+1. charAt
+2. indexOf
+3. length
+4. substring
+
+Que basicamente funcionan igual que el String.
