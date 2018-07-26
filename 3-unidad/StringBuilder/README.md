@@ -88,3 +88,8 @@ sb.append("als"); //Capacidad incrementa automaticamente al tamaño. tamaño = 7
 4. substring
 
 Que basicamente funcionan igual que el String.
+
+La clase *StringBuilder* es utilizada con fines de rendimiento, pero al final esta tiene que convertirse en una
+cadena.
+
+
